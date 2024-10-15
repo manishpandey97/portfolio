@@ -32,7 +32,25 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/*  */
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.blinkCursor {
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  animation: blinkCursor 0.7s steps(2, start) infinite;
 }
